@@ -1,0 +1,142 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Thiên Nhiên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Màu nền xanh nhẹ */
+            color: #333;
+        }
+
+        header {
+            background: url('https://example.com/your-nature-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #004d40;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 30%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Khám Phá Thiên Nhiên</h1>
+        <p>Chào mừng bạn đến với thế giới thiên nhiên tuyệt đẹp!</p>
+    </header>
+
+    <nav>
+        <a href="#">Trang Chủ</a>
+        <a href="#">Khám Phá</a>
+        <a href="#">Về Chúng Tôi</a>
+        <a href="#">Liên Hệ</a>
+    </nav>
+
+    <section>
+        <h2>Khám Phá Thiên Nhiên</h2>
+        <div class="content">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7yNE15erXr9xMyDdlVlBYFZ-LQI70poGug&s" width="100" height="50">
+                <h3>Vẻ Đẹp Núi Rừng</h3>
+                <p>Vẻ đẹp núi rừng Việt Nam vô cùng đa dạng và hùng vĩ, từ những dãy núi trùng điệp đến những khu rừng nhiệt đới bạt ngàn. Mỗi vùng đất, mỗi ngọn núi, mỗi khu rừng lại mang một nét đẹp riêng biệt, kết hợp giữa thiên nhiên hoang sơ và văn hóa đặc trưng của các dân tộc bản địa..</p>
+            </div>
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" width="100" height="50">
+                <h3>Biển Cả Mênh Mông</h3>
+                <p>Dải đất hình chữ S có đường bờ biển đến 3.260km, được thiên nhiên ưu ái ban tặng đường bờ biển dài nên việc sở hữu nhiều bãi tắm biển đẹp là điều dễ hiểu. Bất chợt được hỏi đến, chúng ta cũng có thể kể được nhiều bãi biển nổi tiếng đã từng tốn không ít giấy mực của cộng đồng quốc tế như: Phú Quốc, Cát Bà, Nha Trang, Mỹ Khê,Lăng Cô,….</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlG1iHDvsRNPmZiedCtmT9JRvc_kr1lxMjfA&s" width="100" height="50">
+                <h3>Lý Tưởng Cho Mọi Cuộc Phiêu Lưu</h3>
+                <p>Du lịch biển và rừng Việt Nam là sự kết hợp hoàn hảo giữa thiên nhiên hoang sơ, cảnh quan kỳ vĩ và văn hóa đặc sắc của các địa phương. Với bờ biển và hệ thống rừng nhiệt đới phong phú, Việt Nam mang đến cho du khách những trải nghiệm tuyệt vời ở cả biển và rừng..</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Trang Web Thiên Nhiên. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>
